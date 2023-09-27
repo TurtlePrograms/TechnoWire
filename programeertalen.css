@@ -56,6 +56,10 @@ body {
         position: relative;
         text-align: center;
         font-size: 0.8em;
+        max-width: 5em;
+        min-width: 5em;
+        max-height: 5em;
+        min-height: 5em;
 
         &::after {
             content: '';
@@ -70,9 +74,11 @@ body {
     }
 
     img {
-        border-radius: 50%;
+        border-radius: 0;
         height: 5em;
         border: 0.35em solid var(--dark);
+        max-width: 5em;
+        min-width: 5em;
     }
 
     span {
@@ -190,7 +196,7 @@ body {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 2fr 1fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -247,7 +253,7 @@ body {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 2fr 1fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -263,18 +269,16 @@ body {
     .footer {
         grid-area: footer;
     }
-
-    .menu {
+    .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 0.1fr 2fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "buttons buttons buttons"
-            "buttons buttons buttons"
-            "images images images";
-        grid-area: menu;
+            "header header header"
+            "main main menu"
+            "footer footer footer";
     }
 
     .buttons {
@@ -299,7 +303,7 @@ body {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 2fr 1fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -316,17 +320,16 @@ body {
         grid-area: footer;
     }
 
-    .menu {
+    .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 0.1fr 2fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "buttons buttons buttons"
-            "buttons buttons buttons"
-            "images images images";
-        grid-area: menu;
+            "header header header"
+            "main main menu"
+            "footer footer footer";
     }
 
     .buttons {
