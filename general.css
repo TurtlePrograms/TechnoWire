@@ -1,4 +1,4 @@
-.root{
+:root{
   --dark: #00BBFF;
   --light: #00DAFF;
   --white: #FFFFFF;
@@ -6,6 +6,13 @@
   --black-half: rgba(0,0,0,0.8)
 }
 
+
+body {
+  background-color: var(--dark);
+  font-family: "Agency FB", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+}
 
 #overlay {
     position: fixed; /* Sit on top of the page content */
@@ -37,7 +44,3 @@
 .menu-button{
     min-width: 30vw;
 }
-
-/* body{
-  background-color: var(--light);
-} */
