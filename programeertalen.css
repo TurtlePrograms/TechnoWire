@@ -156,7 +156,10 @@
     .menu {
         display: none;
     }
-
+    .burgermenu{
+        max-width: 1vw;
+        max-height: 1vw;
+    }
 
 }
 

@@ -1,9 +1,10 @@
-/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-@media (min-width:37.5em) {
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media (min-width:20em) {
+
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -16,8 +17,8 @@
 
     .header {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -25,11 +26,16 @@
             "banner banner banner"
             "title title title";
         grid-area: header;
-
+        border:5px solid red;
     }
 
     .banner {
-        grid-area: banner;        
+        grid-area: banner;
+
+        .logo {
+            max-width: 99vw;
+            height: auto;
+        }
     }
 
     .title {
@@ -38,13 +44,13 @@
 
     .footer {
         grid-area: footer;
-
+        
     }
 
     .main {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -52,12 +58,104 @@
             ". . ."
             ". . .";
         grid-area: main;
-
+        border:5px solid rebeccapurple;
     }
 
     .menu {
+        display: none;
         grid-area: menu;
+        border:5px solid green;
+
+    }
+    .buttons{
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 50%;
     }
 
+    .burgermenu .bmimg{
+        width: 5vw;
+        height: auto;
+    }
 
-}
+}        
+
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (min-width:37.5em) {
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header header header header header"
+            "main main main main main"
+            "main main main main main"
+            "main main main main main"
+            "footer footer footer footer footer";
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "banner banner banner"
+            "banner banner banner"
+            "title title title";
+        grid-area: header;
+        border:5px solid red;
+    }
+
+    .banner {
+        grid-area: banner;
+
+        .logo {
+            max-width: 99vw;
+            height: auto;
+        }
+    }
+
+    .title {
+        grid-area: title;
+    }
+
+    .footer {
+        grid-area: footer;
+        
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . menu"
+            ". . ."
+            ". . .";
+        grid-area: main;
+        border:5px solid rebeccapurple;
+    }
+
+    .menu {
+        display: grid;
+        grid-area: menu;
+        border:5px solid green;
+
+    }
+    .buttons{
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 50%;
+    }
+    .burgermenu{
+        display: none;
+    }
+
+}        
