@@ -159,6 +159,26 @@
     }
 
 }        
-.option{
-    border: 5px solid red;
+
+.option-image {
+    position: relative;
 }
+
+.option-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.option-image:not(:hover) .option-text {
+    opacity: 1;
+}
+.option-image:hover .option-text {
+    opacity: 0;
+}
+
