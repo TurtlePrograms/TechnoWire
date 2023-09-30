@@ -26,7 +26,6 @@
             "banner banner banner"
             "title title title";
         grid-area: header;
-        border:5px solid red;
     }
 
     .banner {
@@ -58,13 +57,11 @@
             ". . ."
             ". . .";
         grid-area: main;
-        border:5px solid rebeccapurple;
     }
 
     .menu {
         display: none;
         grid-area: menu;
-        border:5px solid green;
 
     }
     .buttons{
@@ -108,7 +105,6 @@
             "banner banner banner"
             "title title title";
         grid-area: header;
-        border:5px solid red;
     }
 
     .banner {
@@ -140,14 +136,11 @@
             ". . ."
             ". . .";
         grid-area: main;
-        border:5px solid rebeccapurple;
     }
 
     .menu {
         display: grid;
         grid-area: menu;
-        border:5px solid green;
-
     }
     .buttons{
         margin-left: 25%;
@@ -160,19 +153,25 @@
 
 }        
 
+.option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .option-image {
     position: relative;
+    align-content: center;
 }
 
 .option-text {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .option-image:not(:hover) .option-text {
