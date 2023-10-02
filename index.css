@@ -43,7 +43,7 @@
 
     .footer {
         grid-area: footer;
-        
+
     }
 
     .main {
@@ -64,18 +64,15 @@
         grid-area: menu;
 
     }
-    .buttons{
-        margin-left: 25%;
-        margin-right: 25%;
-        width: 50%;
-    }
 
-    .burgermenu .bmimg{
+
+
+    .burgermenu .bmimg {
         width: 5vw;
         height: auto;
     }
 
-}        
+}
 
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
@@ -118,66 +115,83 @@
 
     .title {
         grid-area: title;
+        padding-left: 1vw;
     }
 
     .footer {
         grid-area: footer;
-        
     }
+
+    .intro {
+        grid-area: intro;
+        padding-top: 1vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
 
     .main {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 33vw 29vw 33vw;
         grid-template-rows: auto auto auto;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            ". . menu"
-            ". . ."
+            "intro intro menu"
+            "options options options"
             ". . .";
         grid-area: main;
     }
 
+
+
     .menu {
         display: grid;
         grid-area: menu;
+        
     }
-    .buttons{
-        margin-left: 25%;
-        margin-right: 25%;
-        width: 50%;
-    }
-    .burgermenu{
+   
+
+    .burgermenu {
         display: none;
     }
 
-}        
+    .options {
+        grid-area: options;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
 
-.option{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.option-image {
-    position: relative;
-    align-content: center;
-}
+    .option {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
 
-.option-text {
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
+    .option-image {
+        position: relative;
+        align-content: center;
+    }
 
-.option-image:not(:hover) .option-text {
-    opacity: 1;
-}
-.option-image:hover .option-text {
-    opacity: 0;
-}
+    .option-text {
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
 
+    .option-image:not(:hover) .option-text {
+        opacity: 1;
+    }
+
+    .option-image:hover .option-text {
+        opacity: .5;
+    }
+}
