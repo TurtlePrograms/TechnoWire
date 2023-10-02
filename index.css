@@ -125,6 +125,7 @@
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 @media (min-width:37.5em) {
+    
     .container {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
@@ -156,7 +157,7 @@
         grid-area: banner;
 
         .logo {
-            max-width: 99vw;
+            max-width: 99.9vw;
             height: auto;
         }
     }
