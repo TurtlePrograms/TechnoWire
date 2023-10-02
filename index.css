@@ -1,18 +1,20 @@
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 @media (min-width:20em) {
+    body{
+        max-width: 99vw;
+    }
 
     .container {
         display: grid;
-        grid-template-columns: auto auto auto auto auto;
+        grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "header header header header header"
-            "main main main main main"
-            "main main main main main"
-            "main main main main main"
-            "footer footer footer footer footer";
+            "header"
+            "main"
+            "options"
+            "footer";
     }
 
     .header {
@@ -48,14 +50,14 @@
 
     .main {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto;
         grid-template-rows: auto auto auto;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            ". . menu"
-            ". . ."
-            ". . .";
+            "menu"
+            "intro"
+            "options";
         grid-area: main;
     }
 
@@ -65,11 +67,57 @@
 
     }
 
-
+    .intro {
+        grid-area: intro;
+        padding-top: 1vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        
+    }
 
     .burgermenu .bmimg {
         width: 5vw;
         height: auto;
+    }
+    .options {
+        grid-area: options;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        max-width: 99vw;
+    }
+
+
+    .option-image {
+        position: relative;
+        align-content: center;
+        max-width: 90vw;
+        height: auto;
+        img{
+            max-width: 99vw;
+            height: auto;
+        }
+    }
+
+    .option-text {    
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .option-image:not(:hover) .option-text {
+        opacity: 1;
+    }
+
+    .option-image:hover .option-text {
+        opacity: .5;
     }
 
 }
@@ -148,9 +196,9 @@
     .menu {
         display: grid;
         grid-area: menu;
-        
+
     }
-   
+
 
     .burgermenu {
         display: none;
