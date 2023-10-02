@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="index.css">
     <title>technowire</title>
 </head>
+
 <body>
-    <p>nog niks hier</p>
-    <a href="programeertalen.html"> hier wel </a>
+    <div class="container">
+        <div class="header">
+            <div class="banner">
+                <img class="logo" src="media/TechnoWire-banner.png" alt="TechnoWire-banner">
+            </div>
+            <div class="title">
+                <h1>technowire</h1>
+                <button class="burgermenu" onclick="on()"><img class="bmimg" src="media/more.png"></button>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="intro">
+                <h2>about us</h2>
+                <p>Welcome to TechnoWire, your go-to resource for learning about various programming languages and much
+                    more. Explore our website to gain valuable insights into the world of IT, whether you're a beginner
+                    or just looking to expand your knowledge. We're here to simplify your IT learning journey and
+                    empower you with the skills you need to thrive in the digital age. Join us on this exciting
+                    adventure into the realm of technology!
+
+                </p>
+            </div>
+            <div class="menu">
+                <div class="buttons">
+                    <a href="index.html" target="_blank"><button class="menu-button">home</button></a>
+                    <br>
+                    <a href="programeertalen.html" target="_blank"><button class="menu-button">programming
+                            languages</button></a>
+                    <br>
+                    <a href="https://www.example.com/" target="_blank"><button class="menu-button">test</button></a>
+                    <br>
+                    <a href="https://www.example.com/" target="_blank"><button class="menu-button">test</button></a>
+                    <br>
+                    <a href="https://www.example.com/" target="_blank"><button class="menu-button">test</button></a>
+                </div>
+            </div>
+            <div class="options">
+                <div class="option">
+                    <a href="programeertalen.html" target="_blank">
+                        <div class="option-image">
+                            <img src="media/progamminglang.png" alt="programming-languages">
+                            <div class="option-text">
+                                <h2>programming languages</h2>
+                                <p>learn about the different programming languages</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="option">
+                    <a href="programeertalen.html" target="_blank">
+                        <div class="option-image">
+                            <img src="media/temp.png" alt="programming-languages">
+                            <div class="option-text">
+                                <h2>programming languages</h2>
+                                <p>learn about the different programming languages</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="option">
+                    <a href="programeertalen.html" target="_blank">
+                        <div class="option-image">
+                            <img src="media/temp.png" alt="programming-languages">
+                            <div class="option-text">
+                                <h2>programming languages</h2>
+                                <p>learn about the different programming languages</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <p> </p>
+        </div>
+    </div>
+    <div id="overlay" onclick="off()">
+        <div id="menu-text">
+            <a href="index.html" target="_blank"><button class="menu-button">home</button></a>
+            <a href="https://www.example.com/" target="_blank"><button class="menu-button">test</button></a>
+        </div>
+    </div>
+
+    <script src="general.js"></script>
 </body>
+
 </html>
