@@ -1,5 +1,5 @@
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-@media (min-width:20em) {
+@media (min-width:280px) {
     body{
         max-width: 99vw;
     }
@@ -124,7 +124,7 @@
 
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-@media (min-width:37.5em) {
+@media (min-width:750px) {
     
     .container {
         display: grid;
@@ -207,12 +207,58 @@
 
     .options {
         grid-area: options;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    .option {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    .option-image {
+        position: relative;
+        align-content: center;
+        img{
+            max-height: 30vh;
+            width: auto;
+        }
+    }
+
+    .option-text {
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .option-image:not(:hover) .option-text {
+        opacity: 1;
+    }
+
+    .option-image:hover .option-text {
+        opacity: .5;
+    }
+}
+
+@media (min-width:1400px) {
+    .options {
+        grid-area: options;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: auto;
         padding-top: 1vh;
         padding-bottom: 1vh;
+        padding-left: 10px;
     }
 
     .option {
