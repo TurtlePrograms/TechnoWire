@@ -299,8 +299,6 @@
     }
 }
 
-iframe {
-    border: none;
-    width: 80vw;
-    height: 80vh;
-}
+button{
+    border-radius:2px;
+  }
