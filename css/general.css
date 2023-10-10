@@ -54,6 +54,6 @@ body {
 }
 
 .burgermenu .bmimg {
-  width: 5vw;
+  max-width: 3vw;
   height: auto;
 }
