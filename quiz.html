@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Quiz</title>
@@ -7,87 +8,127 @@
     <link rel="stylesheet" href="css/quiz.css">
     <link rel="stylesheet" href="css/general.css">
 </head>
+
 <body onload="NextQuestion(0)">
-    <main>
-        <!-- creating a modal for when quiz ends -->
-        <div class="modal-container" id="score-modal">
-          
-            <div class="modal-content-container">
-              
-                <h1>Congratulations, Quiz Completed.</h1>
-              
-                <div class="grade-details">
-                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
-                    <p>Right Answers : <span id="right-answers"></span></p>
-                    <p>Percntage correct : <span id="grade-percentage"></span>%</p>
-                    <p ><span id="remarks"></span></p>
-                </div>
-              
-                <div class="modal-button-container">
-                    <button onclick="closeScoreModal()">Continue</button>
-                </div>
-              
+    <div class="container">
+        <div class="header">
+            <div class="banner">
+                <img class="logo" src="media/TechnoWire-banner.png" alt="TechnoWire-banner">
             </div>
+            <div class="title">
+                <h1>technowire</h1>
+                <button class="burgermenu" onclick="on()"><img class="bmimg" src="media/more.png"></button>
+            </div>
+
         </div>
-<!-- contains the quiz -->
-        <div class="game-quiz-container">
-        <!-- top bar -->
-            <div class="game-details-container">
-                <h1>Score : <span id="player-score"></span> / 10</h1>
-                <h1> Question : <span id="question-number"></span> / 10</h1>
-            </div>
+        <main>
 
-            <div class="game-question-container">
-                <h1 id="display-question"></h1>
-            </div>
+            <!-- creating a modal for when quiz ends -->
+            <div class="modal-container" id="score-modal">
 
-            <div class="game-options-container">
-              
-               <div class="modal-container" id="option-modal">
-                 
-                    <div class="modal-content-container">
-                         <h1>Please Pick An Option</h1>
-                      
-                         <div class="modal-button-container">
-                            <button onclick="closeOptionModal()">Continue</button>
-                        </div>
-                      
+                <div class="modal-content-container">
+
+                    <h1>Congratulations, Quiz Completed.</h1>
+
+                    <div class="grade-details">
+                        <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                        <p>Right Answers : <span id="right-answers"></span></p>
+                        <p>Percntage correct : <span id="grade-percentage"></span>%</p>
+                        <p><span id="remarks"></span></p>
                     </div>
-                 
-               </div>
-              
-                <span>
-                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
-                    <label for="option-one" class="option" id="option-one-label"></label>
-                </span>
-              
 
-                <span>
-                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
-                    <label for="option-two" class="option" id="option-two-label"></label>
-                </span>
-              
+                    <div class="modal-button-container">
+                        <button onclick="closeScoreModal()">Continue</button>
+                    </div>
 
-                <span>
-                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
-                    <label for="option-three" class="option" id="option-three-label"></label>
-                </span>
-              
+                </div>
+            </div>
+            <!-- contains the quiz -->
+            <div class="game-quiz-container">
+                <!-- top bar -->
+                <div class="game-details-container">
+                    <h1>Score : <span id="player-score"></span> / 10</h1>
+                    <h1> Question : <span id="question-number"></span> / 10</h1>
+                </div>
 
-                <span>
-                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
-                    <label for="option-four" class="option" id="option-four-label"></label>
-                </span>
+                <div class="game-question-container">
+                    <h1 id="display-question"></h1>
+                </div>
 
+                <div class="game-options-container">
+
+                    <div class="modal-container" id="option-modal">
+
+                        <div class="modal-content-container">
+                            <h1>Please Pick An Option</h1>
+
+                            <div class="modal-button-container">
+                                <button onclick="closeOptionModal()">Continue</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <span>
+                        <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                        <label for="option-one" class="option" id="option-one-label"></label>
+                    </span>
+
+
+                    <span>
+                        <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                        <label for="option-two" class="option" id="option-two-label"></label>
+                    </span>
+
+
+                    <span>
+                        <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                        <label for="option-three" class="option" id="option-three-label"></label>
+                    </span>
+
+
+                    <span>
+                        <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                        <label for="option-four" class="option" id="option-four-label"></label>
+                    </span>
+
+
+                </div>
+
+                <div class="next-button-container">
+                    <button onclick="handleNextQuestion()">Next Question</button>
+                </div>
 
             </div>
-
-            <div class="next-button-container">
-                <button onclick="handleNextQuestion()">Next Question</button>
+        </main>
+        <div class="footer">
+            <p>
+            <div class="buttons">
+                <a href="index.html"><button class="menu-button">home</button></a>
+                <br>
+                <a href="programeertalen.html"><button class="menu-button">programming-languages</button></a>
+                <br>
+                <a href="siliconvalley.html"><button class="menu-button">siliconvalley</button></a>
+                <br>
+                <a href="ict%20hall%20of%20fame.html"><button class="menu-button">ict hall of fame</button></a>
+                <br>
+                <a href="quiz.html"><button class="menu-button">quiz</button></a>
             </div>
+                </p>
+        </div>
+    </div>
+    <div id="overlay" onclick="off()">
+        <div id="menu-text">
+            <a href="index.html"><button class="menu-button">home</button></a>
+            <a href="siliconvalley.html"><button class="menu-button">silicon valley</button></a>
+            <a href="programeertalen.html"><button class="menu-button">programming-languages</button></a>
 
         </div>
-    </main>
+    </div>
+
+    <script src="javascript/general.js"></script>
     <script src="javascript/quiz.js"></script>
 </body>
+
 </html>
