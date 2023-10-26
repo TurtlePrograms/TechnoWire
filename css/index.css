@@ -166,7 +166,7 @@
 
     .title {
         grid-area: title;
-        padding-left: 1vw;
+        padding-left: 3vw;
     }
 
     .footer {
@@ -192,6 +192,7 @@
             "options options options"
             ". . .";
         grid-area: main;
+        margin-left: 40px;
     }
 
 
@@ -199,6 +200,7 @@
     .menu {
         display: grid;
         grid-area: menu;
+        max-width: 50px;
 
     }
 
@@ -298,7 +300,3 @@
         opacity: .5;
     }
 }
-
-button{
-    border-radius:2px;
-  }
