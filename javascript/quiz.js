@@ -222,8 +222,49 @@ const questions = [
       "optionC": "Samuel Morse",
       "optionD": "Alexander Graham Bell",
       "correctOption": "optionC"
+    },
+    {
+        "question": "What year was the Tesla Roadster Introduced, marking a significant step in the development of electric vehicles?",
+        "optionA": "2006",
+        "optionB": "2008",
+        "optionC": "2010",
+        "optionD": "2012",
+        "correctOption": "optionB"
+    },
+    {
+        "question": "In which year was Instagram launched by Kevin Systrom and Mike Krieger?",
+        "optionA": "2008",
+        "optionB": "2010",
+        "optionC": "2011",
+        "optionD": "2014",
+        "correctOption": "optionB"
+    },
+    {
+        "question": "When was Siri, the virtual assistant developed by Apple, introduced with the release of the iPhone 4S?",
+        "optionA": "2009",
+        "optionB": "2010",
+        "optionC": "2011",
+        "optionD": "2012",
+        "correctOption": "optionC"
+    },
+    {
+        "question": "What year did SpaceX, led by Elon Musk, become the first privately funded company to send a spacecraft to the International Space Station?",
+        "optionA": "2010",
+        "optionB": "2011",
+        "optionC": "2012",
+        "optionD": "2013",
+        "correctOption": "optionC"
+    },
+    {
+        "question": "In which year did Google unveil its self-driving car project, signaling a major advancement in autonomous vehicle technology?",
+        "optionA": "2012",
+        "optionB": "2013",
+        "optionC": "2014",
+        "optionD": "2015",
+        "correctOption": "optionC"
     }
-  ]
+]
+
   
 
 
