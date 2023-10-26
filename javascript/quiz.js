@@ -313,7 +313,7 @@ function handleNextQuestion() {
     unCheckRadioButtons()
     //delays next question displaying for a second
     setTimeout(() => {
-        if (indexNumber <= 10) {
+        if (indexNumber <= 9) {
             NextQuestion(indexNumber)
         }
         else {
@@ -345,7 +345,7 @@ function handleEndGame() {
     let remarkColor = null
 
     // condition check for player remark and remark color
-    const totalQuestions = questions.length;
+    const totalQuestions = playerScore + wrongAttempt;
     const percentage = Math.floor((playerScore / totalQuestions) * 100);
     
     if (percentage <= 30) {
