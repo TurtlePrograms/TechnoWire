@@ -39,8 +39,7 @@ body {
   background-size: 100% 100%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  height: 35vh;
-  width: 20vw;
+  width: 35vw;
   text-align: center;
 }
 
