@@ -228,10 +228,12 @@
         position: relative;
         align-content: center;
 
-        img {
-            max-height: 30vh;
-            width: auto;
-        }
+
+    }
+
+    .option-image img {
+        max-height: 30vh;
+        width: auto;
     }
 
     .option-text {
@@ -275,10 +277,12 @@
         position: relative;
         align-content: center;
 
-        img {
-            max-height: 30vh;
-            width: auto;
-        }
+
+    }
+
+    .option-image img {
+        max-height: 30vh;
+        width: auto;
     }
 
     .option-text {
