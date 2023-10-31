@@ -1,6 +1,6 @@
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 @media (min-width:280px) {
-    body{
+    body {
         max-width: 99vw;
     }
 
@@ -72,13 +72,14 @@
         padding-top: 1vh;
         padding-left: 1vw;
         padding-right: 1vw;
-        
+
     }
 
     .burgermenu .bmimg {
         width: 5vw;
         height: auto;
     }
+
     .options {
         grid-area: options;
         display: block;
@@ -95,13 +96,14 @@
         align-content: center;
         max-width: 90vw;
         height: auto;
-        img{
+
+        img {
             max-width: 99vw;
             height: auto;
         }
     }
 
-    .option-text {    
+    .option-text {
         position: absolute;
         top: 50%;
         text-align: center;
@@ -125,7 +127,7 @@
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 @media (min-width:750px) {
-    
+
     .container {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
@@ -223,7 +225,8 @@
     .option-image {
         position: relative;
         align-content: center;
-        img{
+
+        img {
             max-height: 30vh;
             width: auto;
         }
@@ -269,7 +272,8 @@
     .option-image {
         position: relative;
         align-content: center;
-        img{
+
+        img {
             max-height: 30vh;
             width: auto;
         }
@@ -294,3 +298,7 @@
         opacity: .5;
     }
 }
+
+button{
+    border-radius:2px;
+  }
