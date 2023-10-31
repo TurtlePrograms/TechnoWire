@@ -1,245 +1,271 @@
-const questions =   uestions = [    
+const questions = [
     {
-        "question": "Who is often referred to as the 'father of the computer' due to his development of the mechanical analytical engine, an early concept of a programmable computer?",
-        "optionA": "Gordon Moore",
-        "optionB": "Charles Babbage",
-        "optionC": "William Shockley",
-        "optionD": "Steve Jobs",
+      "question": "Who is known as the 'father of the computer' due to his development of the mechanical analytical engine, an early concept of a programmable computer?",
+      "optionA": "Charles Babbage",
+      "optionB": "William Shockley",
+      "optionC": "Gordon Moore",
+      "optionD": "Linus Torvalds",
+      "correctOption": "optionA"
+    },
+    {
+      "question": "Who is considered the first programmer in history due to her work on Babbage's analytical engine and her notes that laid the foundation for modern programming languages?",
+      "optionA": "Ada Lovelace",
+      "optionB": "Mark Zuckerberg",
+      "optionC": "Steve Jobs",
+      "optionD": "Larry Page",
+      "correctOption": "optionA"
+    },
+    {
+      "question": "What year did Google, the world's most widely used search engine, get founded?",
+      "optionA": "1992",
+      "optionB": "1998",
+      "optionC": "1999",
+      "optionD": "2004",
+      "correctOption": "optionB"
+    },
+    {
+      "question": "Which of the following programming languages is known for its versatility and is used for system programming, embedded systems, and more?",
+      "optionA": "C",
+      "optionB": "Python",
+      "optionC": "Java",
+      "optionD": "JavaScript",
+      "correctOption": "optionA"
+    },
+    {
+      "question": "What significant event marked the introduction of a graphical user interface (GUI) and the integration of a mouse for personal computers?",
+      "optionA": "The Altair 8800",
+      "optionB": "Windows 3.1",
+      "optionC": "Launch of the Macintosh",
+      "optionD": "Launch of Windows 95",
+      "correctOption": "optionC"
+    },
+    {
+      "question": "Who is known for coining 'Moore's Law,' which observes that the number of transistors on a microchip tends to double roughly every two years?",
+      "optionA": "Gordon Moore",
+      "optionB": "Bill Gates",
+      "optionC": "Mark Zuckerberg",
+      "optionD": "Larry Page",
+      "correctOption": "optionA"
+    },
+    {
+      "question": "Which of these individuals is the co-founder of Facebook, a social media platform that has changed the way people worldwide communicate and share information?",
+      "optionA": "Linus Torvalds",
+      "optionB": "Kevin Mitnick",
+      "optionC": "Mark Zuckerberg",
+      "optionD": "Charles Babbage",
+      "correctOption": "optionC"
+    },
+    {
+      "question": "In which year was Wi-Fi introduced, revolutionizing how we connect to the internet with wireless technology?",
+      "optionA": "1992",
+      "optionB": "1995",
+      "optionC": "2004",
+      "optionD": "1999",
+      "correctOption": "optionD"
+    },
+    {
+      "question": "Which of the following programming languages is known for its readability and ease of use, making it popular for web development, data science, and automation?",
+      "optionA": "Ruby",
+      "optionB": "Haskell",
+      "optionC": "Scala",
+      "optionD": "Python",
+      "correctOption": "optionD"
+    },
+    {
+      "question": "What is the primary language for front-end web development, providing interactivity and dynamic content?",
+      "optionA": "C",
+      "optionB": "Java",
+      "optionC": "TypeScript",
+      "optionD": "JavaScript",
+      "correctOption": "optionD"
+    },
+    {
+      "question": "Which co-founder of Apple Inc. played a pivotal role in the development of the first successful personal computer, the Apple I and the Apple II?",
+      "optionA": "Steve Jobs",
+      "optionB": "Steve Wozniak",
+      "optionC": "Ronald Wayne",
+      "optionD": "Mark Zuckerberg",
+      "correctOption": "optionB"
+    },
+    {
+      "question": "What was the widely acclaimed microcomputer kit that made its debut in 1975 and is frequently regarded as one of the pioneering personal computers?",
+      "optionA": "Commodore 64",
+      "optionB": "Apple II",
+      "optionC": "The Altair 8800",
+      "optionD": "Atari 2600",
+      "correctOption": "optionC"
+    },
+    {
+      "question": "Which language is known for emphasizing simplicity and productivity, with an elegant syntax?",
+      "optionA": "Fortran",
+      "optionB": "Ruby",
+      "optionC": "Scala",
+      "optionD": "COBOL",
+      "correctOption": "optionB"
+    },
+    {
+      "question": "What event marked the introduction of the TrueType font system, allowing Windows applications to use scalable fonts?",
+      "optionA": "Launch of the Macintosh",
+      "optionB": "Windows 95",
+      "optionC": "Windows 3.1",
+      "optionD": "Apple I release",
+      "correctOption": "optionC"
+    },
+    {
+      "question": "Which co-founder of Microsoft is known for significant influence on the personal computer industry?",
+      "optionA": "Bill Gates",
+      "optionB": "Steve Jobs",
+      "optionC": "Gordon Moore",
+      "optionD": "Mark Zuckerberg",
+      "correctOption": "optionA"
+    },
+    {
+      "question": "In which year was the iPhone presented, marking a significant moment in the evolution of mobile technology?",
+      "optionA": "2004",
+      "optionB": "1998",
+      "optionC": "2007",
+      "optionD": "1999",
+      "correctOption": "optionC"
+    },
+    {
+      "question": "Which individual is known for creating the Linux operating system, one of the most influential open-source projects in the history of computer science?",
+      "optionA": "Charles Babbage",
+      "optionB": "Linus Torvalds",
+      "optionC": "Ada Lovelace",
+      "optionD": "Steve Jobs",
+      "correctOption": "optionB"
+    },
+    {
+      "question": "Which programming language is designed for scientific and engineering calculations and was the first high-level language?",
+      "optionA": "Fortran",
+      "optionB": "LISP",
+      "optionC": "COBOL",
+      "optionD": "C",
+      "correctOption": "optionA"
+    },
+    {
+      "question": "In what year did the beginning of Silicon Valley, the globally renowned hub for technology and innovation, occur?",
+      "optionA": "1939",
+      "optionB": "1975",
+      "optionC": "1984",
+      "optionD": "2007",
+      "correctOption": "optionA"
+    },
+    {
+      "question": "Which language is primarily used for building web applications, Android apps, and more, and is known for being platform-independent?",
+      "optionA": "Java",
+      "optionB": "TypeScript",
+      "optionC": "Python",
+      "optionD": "JavaScript",
+      "correctOption": "optionA"
+    },
+    {
+      "question": "Who made significant contributions to the invention of the transistor and coined 'Moore's Law'?",
+      "optionA": "William Shockley",
+      "optionB": "Steve Jobs",
+      "optionC": "Larry Page",
+      "optionD": "Gordon Moore",
+      "correctOption": "optionD"
+    },
+    {
+      "question": "Which of the following programming languages is known for its purely functional nature and strong type inference?",
+      "optionA": "Haskell",
+      "optionB": "Python",
+      "optionC": "Ruby",
+      "optionD": "Scala",
+      "correctOption": "optionA"
+    },
+    {
+      "question": "What technology, introduced in 1999, revolutionized how we connect to the internet using wireless signals?",
+      "optionA": "Dial-up internet",
+      "optionB": "Broadband internet",
+      "optionC": "Wi-Fi",
+      "optionD": "Fiber optic internet",
+      "correctOption": "optionC"
+    },
+    {
+      "question": "Which co-founder of YouTube revolutionized the way videos are shared and viewed online?",
+      "optionA": "Chad Hurley",
+      "optionB": "Kevin Mitnick",
+      "optionC": "Steve Chen",
+      "optionD": "Jawed Karim",
+      "correctOption": "optionA"
+    },
+    {
+      "question": "What was the first social networking platform founded in 2004 by Mark Zuckerberg?",
+      "optionA": "Twitter",
+      "optionB": "Myspace",
+      "optionC": "Facebook",
+      "optionD": "YouTube",
+      "correctOption": "optionC"
+    },
+    {
+      "question": "Which co-founder of Apple Inc. was responsible for the development of the first successful personal computer, the Apple I and the Apple II?",
+      "optionA": "Steve Jobs",
+      "optionB": "Steve Wozniak",
+      "optionC": "Ronald Wayne",
+      "optionD": "Gordon Moore",
+      "correctOption": "optionB"
+    },
+    {
+      "question": "In what year was Windows 95 launched, accompanied by the song 'Start Me Up' by The Rolling Stones?",
+      "optionA": "1995",
+      "optionB": "2004",
+      "optionC": "2005",
+      "optionD": "1998",
+      "correctOption": "optionA"
+    },
+    {
+      "question": "Which individual is known for the creation of the transatlantic telegraph cable, significantly impacting global communication?",
+      "optionA": "Nikola Tesla",
+      "optionB": "Thomas Edison",
+      "optionC": "Samuel Morse",
+      "optionD": "Alexander Graham Bell",
+      "correctOption": "optionC"
+    },
+    {
+        "question": "What year was the Tesla Roadster Introduced, marking a significant step in the development of electric vehicles?",
+        "optionA": "2006",
+        "optionB": "2008",
+        "optionC": "2010",
+        "optionD": "2012",
         "correctOption": "optionB"
     },
     {
-        "question": "What programming language, designed in 1957, was the first high-level programming language and primarily used for scientific and engineering calculations?",
-        "optionA": "LISP",
-        "optionB": "COBOL",
-        "optionC": "Fortran",
-        "optionD": "C",
-        "correctOption": "optionC"
-    },
-    {
-        "question": "In what year was JavaScript, the primary language for front-end web development, first introduced?",
-        "optionA": "1984",
-        "optionB": "1995",
-        "optionC": "2004",
+        "question": "In which year was Instagram launched by Kevin Systrom and Mike Krieger?",
+        "optionA": "2008",
+        "optionB": "2010",
+        "optionC": "2011",
         "optionD": "2014",
         "correctOption": "optionB"
     },
     {
-        "question": "Which co-founder of Intel is known for coining 'Moore's Law,' which predicts the regular doubling of computer power?",
-        "optionA": "Charles Babbage",
-        "optionB": "Larry Page",
-        "optionC": "Gordon Moore",
-        "optionD": "Mark Zuckerberg",
+        "question": "When was Siri, the virtual assistant developed by Apple, introduced with the release of the iPhone 4S?",
+        "optionA": "2009",
+        "optionB": "2010",
+        "optionC": "2011",
+        "optionD": "2012",
         "correctOption": "optionC"
     },
     {
-        "question": "What notable event in 1975 marked the beginning of Silicon Valley as a hub for technology and innovation?",
-        "optionA": "Launch of the Macintosh",
-        "optionB": "The Altair 8800 is released",
-        "optionC": "Founding of Google",
-        "optionD": "Launch of Windows 95",
-        "correctOption": "optionB"
-    },
-    {
-        "question": "Who are the co-founders of Google, the world's most widely used search engine?",
-        "optionA": "Steve Jobs and Steve Wozniak",
-        "optionB": "Larry Page and Sergey Brin",
-        "optionC": "Bill Gates and Paul Allen",
-        "optionD": "Chad Hurley, Steve Chen, and Jawed Karim",
-        "correctOption": "optionB"
-    },
-    {
-        "question": "What language, known for its simplicity and efficiency, is suitable for concurrent and networked systems and was developed by Google?",
-        "optionA": "Ruby",
-        "optionB": "Python",
-        "optionC": "Go (Golang)",
-        "optionD": "TypeScript",
+        "question": "What year did SpaceX, led by Elon Musk, become the first privately funded company to send a spacecraft to the International Space Station?",
+        "optionA": "2010",
+        "optionB": "2011",
+        "optionC": "2012",
+        "optionD": "2013",
         "correctOption": "optionC"
     },
     {
-        "question": "What social media platform, founded in 2004, has changed the way people worldwide communicate and share information?",
-        "optionA": "Twitter",
-        "optionB": "Facebook",
-        "optionC": "YouTube",
-        "optionD": "WhatsApp",
-        "correctOption": "optionB"
-    },
-    {
-        "question": "Who is the creator of the Linux operating system, one of the most influential open-source projects in computer science?",
-        "optionA": "Linus Torvalds",
-        "optionB": "Bill Gates",
-        "optionC": "Steve Jobs",
-        "optionD": "Mark Zuckerberg",
-        "correctOption": "optionA"
-    },
-    {
-        "question": "In what year was the iPhone first presented to the public?",
-        "optionA": "1992",
-        "optionB": "2000",
-        "optionC": "2007",
-        "optionD": "2010",
+        "question": "In which year did Google unveil its self-driving car project, signaling a major advancement in autonomous vehicle technology?",
+        "optionA": "2012",
+        "optionB": "2013",
+        "optionC": "2014",
+        "optionD": "2015",
         "correctOption": "optionC"
-    },
-    {
-        "question": "What year did COBOL, a programming language developed for business data processing, first appear?",
-        "optionA": "1950",
-        "optionB": "1955",
-        "optionC": "1959",
-        "optionD": "1965",
-        "correctOption": "optionC"
-    },
-    {
-        "question": "Which programming language is often used in artificial intelligence and symbolic mathematics, and was created in 1958 by John McCarthy?",
-        "optionA": "LISP",
-        "optionB": "Fortran",
-        "optionC": "COBOL",
-        "optionD": "C",
-        "correctOption": "optionA"
-    },
-    {
-        "question": "Which programming language is known for its versatility, low-level capabilities, and is used for system programming and embedded systems?",
-        "optionA": "JavaScript",
-        "optionB": "Java",
-        "optionC": "C",
-        "optionD": "Python",
-        "correctOption": "optionC"
-    },
-    {
-        "question": "In what year was the Macintosh computer launched, introducing a graphical user interface and a mouse?",
-        "optionA": "1984",
-        "optionB": "1992",
-        "optionC": "2000",
-        "optionD": "2006",
-        "correctOption": "optionA"
-    },
-    {
-        "question": "Which co-founder of Apple Inc. is known for his contributions to the development of the Apple I and Apple II computers?",
-        "optionA": "Steve Wozniak",
-        "optionB": "Steve Jobs",
-        "optionC": "Ronald Wayne",
-        "optionD": "Bill Gates",
-        "correctOption": "optionA"
-    },
-    {
-        "question": "What event marked the genesis of a tech empire that would shape the future of computing, involving Steve Jobs, Steve Wozniak, and Ronald Wayne?",
-        "optionA": "Founding of Microsoft",
-        "optionB": "Launch of the Macintosh",
-        "optionC": "Development of the Apple I",
-        "optionD": "Development of the first microchip",
-        "correctOption": "optionC"
-    },
-    {
-        "question": "What does the term 'Moore's Law' predict in the world of technology?",
-        "optionA": "Doubling of computer power every year",
-        "optionB": "Doubling of computer power every five years",
-        "optionC": "Doubling of computer power roughly every two years",
-        "optionD": "Stagnation of computer power",
-        "correctOption": "optionC"
-    },
-    {
-        "question": "Which company was founded by Larry Page and Sergey Brin and is known for being the world's most widely used search engine?",
-        "optionA": "Yahoo",
-        "optionB": "Microsoft",
-        "optionC": "Google",
-        "optionD": "AltaVista",
-        "correctOption": "optionC"
-    },
-    {
-        "question": "What wireless technology, introduced in 1999, has become a common way to connect devices to the internet?",
-        "optionA": "Bluetooth",
-        "optionB": "Wi-Fi",
-        "optionC": "LTE",
-        "optionD": "NFC",
-        "correctOption": "optionB"
-    },
-    {
-        "question": "In what year was YouTube founded, revolutionizing the way videos are shared and viewed online?",
-        "optionA": "1995",
-        "optionB": "2000",
-        "optionC": "2005",
-        "optionD": "2010",
-        "correctOption": "optionC"
-    },
-    {
-        "question": "What microcomputer kit, considered one of the pioneering personal computers, made its debut in 1975?",
-        "optionA": "Apple II",
-        "optionB": "Atari 2600",
-        "optionC": "Commodore 64",
-        "optionD": "Altair 8800",
-        "correctOption": "optionD"
-    },
-    {
-        "question": "Which language, known for its elegance and productivity, emphasizes simplicity and was created by Yukihiro Matsumoto in 1995?",
-        "optionA": "Ruby",
-        "optionB": "Python",
-        "optionC": "Scala",
-        "optionD": "Haskell",
-        "correctOption": "optionA"
-    },
-    {
-        "question": "What is the primary language for front-end web development, providing interactivity and dynamic content?",
-        "optionA": "Java",
-        "optionB": "JavaScript",
-        "optionC": "TypeScript",
-        "optionD": "HTML",
-        "correctOption": "optionB"
-    },
-    {
-        "question": "Which language is designed for systems programming with a focus on safety, preventing memory-related bugs?",
-        "optionA": "Java",
-        "optionB": "Python",
-        "optionC": "Rust",
-        "optionD": "Scala",
-        "correctOption": "optionC"
-    },
-    {
-        "question": "What language combines object-oriented and functional programming features and runs on the JVM (Java Virtual Machine)?",
-        "optionA": "Ruby",
-        "optionB": "Scala",
-        "optionC": "Python",
-        "optionD": "JavaScript",
-        "correctOption": "optionB"
-    },
-    {
-        "question": "Which language, introduced in 2012 by Microsoft, is a superset of JavaScript and adds static typing to improve code quality and maintainability?",
-        "optionA": "JavaScript",
-        "optionB": "TypeScript",
-        "optionC": "Java",
-        "optionD": "Python",
-        "correctOption": "optionB"
-    },
-    {
-        "question": "What language is designed for iOS, macOS, watchOS, and tvOS app development, with a focus on safety and performance?",
-        "optionA": "Java",
-        "optionB": "Kotlin",
-        "optionC": "Swift",
-        "optionD": "Objective-C",
-        "correctOption": "optionC"
-    },
-    {
-        "question": "Which statically-typed language runs on the Java Virtual Machine (JVM) and is known for its conciseness and safety features?",
-        "optionA": "Java",
-        "optionB": "Kotlin",
-        "optionC": "Ruby",
-        "optionD": "Scala",
-        "correctOption": "optionB"
-    },
-    {
-        "question": "Who made significant contributions to the invention of the transistor and coined 'Moore's Law'?",
-        "optionA": "Charles Babbage",
-        "optionB": "William Shockley",
-        "optionC": "Gordon Moore",
-        "optionD": "John McCarthy",
-        "correctOption": "optionB"
-    },
-    {
-        "question": "Who is known as the first programmer in history, thanks to her work on Charles Babbage's analytical engine and her notes that laid the foundation for modern programming languages?",
-        "optionA": "Ada Lovelace",
-        "optionB": "Grace Hopper",
-        "optionC": "Hedy Lamarr",
-        "optionD": "Rear Admiral Grace M. Hopper",
-        "correctOption": "optionA"
     }
 ]
+
+  
 
 
 
@@ -328,7 +354,7 @@ function handleNextQuestion() {
     unCheckRadioButtons()
     //delays next question displaying for a second
     setTimeout(() => {
-        if (indexNumber <= 10) {
+        if (indexNumber <= 9) {
             NextQuestion(indexNumber)
         }
         else {
@@ -360,8 +386,8 @@ function handleEndGame() {
     let remarkColor = null
 
     // condition check for player remark and remark color
-    const totalQuestions = questions.length;
-    const percentage = (playerScore / totalQuestions) * 100;
+    const totalQuestions = playerScore + wrongAttempt;
+    const percentage = Math.floor((playerScore / totalQuestions) * 100);
     
     if (percentage <= 30) {
         remark = "Maybe read the website again";
