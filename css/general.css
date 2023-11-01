@@ -43,11 +43,39 @@ body {
   text-align: center;
 }
 
-.menu-button {
-  min-width: 15vw;
-}
+
 
 .burgermenu .bmimg {
   max-width: 3vw;
   height: auto;
+}
+
+/* nav bar */
+.menu {
+  background-color: #00DAFF;
+  width: 85%;
+  text-align: center;
+  margin: auto;
+  height: 100%;
+  margin-left: 5vw;
+}
+
+.menu-button {
+  width: 80%;
+
+}
+
+.buttons a button {
+  border-radius: 0px;
+  height: 20%;
+}
+
+.buttons a:first-child button {
+  margin-top: 10px ;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.buttons a:last-child button {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
