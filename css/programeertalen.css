@@ -239,15 +239,16 @@
 
     .main {
         display: grid;
-        grid-template-columns: 33vw 29vw 33vw;
+        grid-template-columns: 26vw 25vw 25vw 20vw;
         grid-template-rows: auto auto auto;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "intro intro menu"
-            "timeline timeline timeline"
-            ". . .";
+            "intro intro intro menu"
+            "options options options menu"
+            ". . . menu";
         grid-area: main;
+        margin-left: 40px;
     }
 
 
