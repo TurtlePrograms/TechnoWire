@@ -18,6 +18,7 @@ body {
     height: 20vh;
     max-height: 20vh;
     background-color: var(--light);
+    font-size: large;
 }
 .Menu button:hover{
     background-color: var(--blend);
