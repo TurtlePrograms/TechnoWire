@@ -15,7 +15,8 @@ body {
 }
 .Menu button{
     width: 100%;
-    height: calc(100% /  5);
+    height: 20vh;
+    max-height: 20vh;
     background-color: var(--light);
 }
 .Menu button:hover{
