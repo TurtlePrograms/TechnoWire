@@ -1,50 +1,9 @@
-.text {
-    padding-left: 20px
-}
-
-.options {
-    grid-area: options;
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px
-}
-
-.option {
-    padding: 0 10px;
-    height: 25vh
-}
-
-.option:hover {
-    background-color: var(--blend)
-}
-
-.option a {
-    text-decoration: none;
-    color: var(--text)
-}
-
-.option img {
-    max-height: 25vh
-}
-
-.option:hover img {
-    filter: contrast(2)
-}
-
-.submenu {
-    display: none
-}
-
-#overlay {
-    display: none
-}
-
 :root {
-    --dark: #0bf;
-    --blend: #00cbff;
-    --light: #00daff;
-    --white: #fff;
-    --black: #000
+    --dark: #00BBFF;
+    --blend: #00CBFF;
+    --light: #00DAFF;
+    --white: #FFFFFF;
+    --black: #000000;
 }
 
 body {
@@ -52,29 +11,26 @@ body {
     font-family: "Agency FB", sans-serif;
     font-weight: 800;
     font-size: 14px;
-    margin: 0
+    margin: 0px;
 }
-
-.Menu button {
+.Menu button{
     width: 100%;
     height: 20vh;
     max-height: 20vh;
-    background-color: var(--light)
+    background-color: var(--light);
 }
-
-.Menu button:hover {
-    background-color: var(--blend)
+.Menu button:hover{
+    background-color: var(--blend);
 }
-
 .topbar img {
     width: 100vw;
     height: auto;
-    max-height: 20vh
+    max-height: 20vh    ;
 }
 
 .submenu {
     grid-area: submenu;
-    display: block
+    display: block;
 }
 
 #overlay {
@@ -88,7 +44,7 @@ body {
     bottom: 0;
     backdrop-filter: grayscale(50%) blur(5px);
     z-index: 2;
-    cursor: pointer
+    cursor: pointer;
 }
 
 #menu-text {
@@ -97,36 +53,33 @@ body {
     top: 50%;
     left: 50%;
     font-size: 50px;
-    color: #fff;
+    color: white;
     background-image: url("../media/icon.png");
     background-size: 100% 100%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     width: 35vw;
-    text-align: center
+    text-align: center;
 }
-
-.menu-text {
-    margin: 0
+.menu-text{
+    margin: 0px;
 }
-
-.menu-button {
+.menu-button{
     width: 100%;
-    height: calc(100% / 5)
+    height: calc(100% / 5);
+}
+#burgermenu{
+    max-width: 10vw;
+}
+.submenu{
+    display: none;
 }
 
-#burgermenu {
-    max-width: 10vw
-}
-
-.submenu {
-    display: none
-}
-
-@media screen and (max-width:600px) {
-    .submenu {
-        display: block
+@media screen and (max-width: 600px) {
+    .submenu{
+        display: block;
     }
+    
 }
 
 main {
@@ -136,7 +89,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -200px
+    margin-top: -200px;
 }
 
 .game-quiz-container {
@@ -147,7 +100,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: 2px
+    border-radius: 2px;
 }
 
 .game-details-container {
@@ -155,11 +108,11 @@ main {
     height: 4rem;
     display: flex;
     justify-content: space-around;
-    align-items: center
+    align-items: center;
 }
 
 .game-details-container h1 {
-    font-size: 1.2rem
+    font-size: 1.2rem;
 }
 
 .game-question-container {
@@ -169,13 +122,13 @@ main {
     align-items: center;
     justify-content: center;
     border: 2px solid var(--dark);
-    border-radius: 1.5px
+    border-radius: 1.5px;
 }
 
 .game-question-container h1 {
     font-size: 1.1rem;
     text-align: center;
-    padding: 3px
+    padding: 3px;
 }
 
 .game-options-container {
@@ -184,7 +137,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .game-options-container span {
@@ -192,7 +145,7 @@ main {
     height: 3rem;
     border: 2px solid var(--dark);
     border-radius: 2px;
-    overflow: hidden
+    overflow: hidden;
 }
 
 span label {
@@ -202,47 +155,48 @@ span label {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: transform .3s;
+    transition: transform 0.3s;
     font-weight: 600;
-    color: #161616
+    color: rgb(22, 22, 22);
 }
 
 span label:hover {
     -ms-transform: scale(1.12);
     -webkit-transform: scale(1.12);
     transform: scale(1.12);
-    color: white
+    color: white;
 }
 
 input[type="radio"] {
     position: relative;
-    display: none
+    display: none;
 }
 
+
 input[type=radio]:checked~.option {
-    background: var(--dark)
+    background: var(--dark);
 }
 
 .next-button-container {
     width: 50%;
     height: 3rem;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .next-button-container button {
     width: 8rem;
     height: 2rem;
-    background: 0;
-    color: #191919;
+    background: none;
+    color: rgb(25, 25, 25);
     font-weight: 600;
     border: 2px solid gray;
     cursor: pointer;
-    outline: 0
+    outline: none;
 }
 
 .next-button-container button:hover {
-    background-color: #8f5d5d
+    background-color: rgb(143, 93, 93);
 }
 
 .modal-container {
@@ -254,31 +208,31 @@ input[type=radio]:checked~.option {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     -webkit-animation: fadeIn 1.2s ease-in-out;
-    animation: fadeIn 1.2s ease-in-out
+    animation: fadeIn 1.2s ease-in-out;
 }
 
 .modal-content-container {
     height: 20rem;
     width: 25rem;
-    background-color: #2b2a2a;
+    background-color: rgb(43, 42, 42);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: 2.5px
+    border-radius: 2.5px;
 }
 
 .modal-content-container h1 {
     font-size: 1.3rem;
     height: 3rem;
     color: lightgray;
-    text-align: center
+    text-align: center;
 }
 
 .grade-details {
@@ -287,12 +241,12 @@ input[type=radio]:checked~.option {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .grade-details p {
-    color: #fff;
-    text-align: center
+    color: white;
+    text-align: center;
 }
 
 .modal-button-container {
@@ -300,114 +254,118 @@ input[type=radio]:checked~.option {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 .modal-button-container button {
     width: 10rem;
     height: 2rem;
-    background: 0;
-    outline: 0;
-    border: 1px solid #fcf2f1;
-    color: #fff;
+    background: none;
+    outline: none;
+    border: 1px solid rgb(252, 242, 241);
+    color: white;
     font-size: 1.1rem;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .modal-button-container button:hover {
-    background-color: #535252
+    background-color: rgb(83, 82, 82);
 }
 
-@media(min-width :300px) and (max-width :350px) {
+@media(min-width : 300px) and (max-width : 350px) {
+
     .game-quiz-container {
         width: 90%;
-        height: 80vh
+        height: 80vh;
     }
 
     .game-details-container h1 {
-        font-size: .8rem
+        font-size: 0.8rem;
     }
 
     .game-question-container {
-        height: 6rem
+        height: 6rem;
     }
 
     .game-question-container h1 {
-        font-size: .9rem
+        font-size: 0.9rem;
     }
 
     .game-options-container span {
         width: 90%;
-        height: 2.5rem
+        height: 2.5rem;
     }
 
     .game-options-container span label {
-        font-size: .8rem
+        font-size: 0.8rem;
     }
 
     .modal-content-container {
         width: 90%;
-        height: 25rem
+        height: 25rem;
     }
 
     .modal-content-container h1 {
-        font-size: 1.2rem
+        font-size: 1.2rem;
     }
+
 }
 
-@media(min-width :350px) and (max-width :700px) {
+@media(min-width : 350px) and (max-width : 700px) {
     body {
-        font-size: larger
+        font-size: larger;
     }
 
     .game-quiz-container {
         width: 90%;
-        height: 80vh
+        height: 80vh;
     }
 
     .game-details-container h1 {
-        font-size: 1rem
+        font-size: 1rem;
     }
 
     .game-question-container {
-        height: 8rem
+        height: 8rem;
     }
 
     .game-question-container h1 {
-        font-size: .9rem
+        font-size: 0.9rem;
     }
 
     .game-options-container span {
-        width: 90%
+        width: 90%;
     }
 
     .modal-content-container {
         width: 90%;
-        height: 25rem
+        height: 25rem;
     }
 
     .modal-content-container h1 {
-        font-size: 1.2rem
+        font-size: 1.2rem;
     }
 }
 
+
+
 @keyframes fadeIn {
     from {
-        opacity: 0
+        opacity: 0;
     }
 
     to {
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @-webkit-keyframes fadeIn {
     from {
-        opacity: 0
+        opacity: 0;
     }
 
     to {
-        opacity: 1
+        opacity: 1;
     }
 }
 
@@ -416,70 +374,16 @@ input[type=radio]:checked~.option {
 
     .logo {
         max-width: 99.9vw;
-        height: auto
+        height: auto;
     }
 }
 
+
 .burgermenu {
-    display: none
+    display: none;
 }
 
 img {
-    max-width: 100vw
+    max-width: 100vw;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 30vh 1fr 1fr 1fr;
-    gap: 0;
-    grid-auto-flow: row;
-    grid-template-areas: "topbar topbar topbar topbar topbar topbar" "timeline timeline timeline timeline timeline menu" "timeline timeline timeline timeline timeline ." "timeline timeline timeline timeline timeline . "
-}
-
-.topbar {
-    grid-area: topbar;
-    max-height: 20vh
-}
-
-.Menu {
-    grid-area: menu
-}
-
-.timeline {
-    grid-area: timeline
-}
-
-#quiz {
-    width: 90%;
-    height: 100vh;
-    border: 0
-}
-
-@media screen and (max-width:600px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: min-content min-content auto auto;
-        gap: 0;
-        grid-auto-flow: row;
-        grid-template-areas: "topbar" "submenu" "timeline" "timeline"
-    }
-
-    .topbar {
-        grid-area: topbar;
-        max-height: 20vh
-    }
-
-    .submenu {
-        grid-area: submenu
-    }
-
-    .timeline {
-        grid-area: timeline
-    }
-
-    .Menu {
-        display: none
-    }
-}
