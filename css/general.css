@@ -21,3 +21,8 @@ body {
 .Menu button:hover{
     background-color: var(--blend);
 }
+.topbar img {
+    width: 100vw;
+    height: auto;
+    max-height: 20vh    ;
+}

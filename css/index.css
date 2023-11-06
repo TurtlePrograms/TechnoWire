@@ -15,10 +15,6 @@
     grid-area: topbar;
 }
 
-.topbar img {
-    width: 100vw;
-    height: auto;
-}
 
 .Menu {
     grid-area: Menu;
