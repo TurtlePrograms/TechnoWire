@@ -24,6 +24,12 @@
     grid-area: timeline;
 }
 
+#quiz{
+    width: 90%;
+    height: 100vh;
+    border: none;
+}
+
 @media screen and (max-width: 600px) {
     .container {
         display: grid;
