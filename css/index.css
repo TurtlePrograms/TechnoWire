@@ -1,304 +1,100 @@
-/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-@media (min-width:280px) {
-    body {
-        max-width: 99vw;
-    }
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "topbar topbar topbar topbar topbar topbar"
+        "text text text text text Menu"
+        "options options options options options Menu"
+        "options options options options options Menu";
+}
 
+.topbar {
+    grid-area: topbar;
+}
+
+
+.Menu {
+    grid-area: Menu;
+}
+
+.text {
+    grid-area: text;
+    padding-left: 20px;
+}
+
+.options {
+    grid-area: options;
+    display: flex;
+    padding-left: 10px;
+}
+
+.option {
+    padding: 0px 10px 0px 10px;
+    height: 25vh;
+}
+
+.option:hover {
+    background-color: var(--blend);
+}
+
+.option a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.option img {
+    width: 20vw;
+    max-height: 25vh;
+}
+
+.option:hover img {
+    filter: contrast(2);
+}
+
+.submenu {
+    display: none;
+}
+
+#overlay {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
     .container {
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content 1fr 1fr 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "header"
-            "main"
+            "topbar "
+            "submenu"
+            "text "
             "options"
-            "footer";
-    }
-
-    .header {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "banner banner banner"
-            "banner banner banner"
-            "title title title";
-        grid-area: header;
-    }
-
-    .banner {
-        grid-area: banner;
-
-        .logo {
-            max-width: 99vw;
-            height: auto;
-        }
-    }
-
-    .title {
-        grid-area: title;
-    }
-
-    .footer {
-        grid-area: footer;
-
-    }
-
-    .main {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "menu"
-            "intro"
             "options";
-        grid-area: main;
     }
 
-    .menu {
-        display: none;
-        grid-area: menu;
-
-    }
-
-    .intro {
-        grid-area: intro;
-        padding-top: 1vh;
-        padding-left: 1vw;
-        padding-right: 1vw;
-
-    }
-
-    .burgermenu .bmimg {
-        width: 5vw;
-        height: auto;
-    }
-
-    .options {
-        grid-area: options;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
-        max-width: 99vw;
-    }
-
-
-    .option-image {
-        position: relative;
-        align-content: center;
-        max-width: 90vw;
-        height: auto;
-
-        img {
-            max-width: 99vw;
-            height: auto;
-        }
-    }
-
-    .option-text {
-        position: absolute;
-        top: 50%;
-        text-align: center;
-        color: white;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    .option-image:not(:hover) .option-text {
-        opacity: 1;
-    }
-
-    .option-image:hover .option-text {
-        opacity: .5;
-    }
-
-}
-
-
-/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-@media (min-width:750px) {
-
-    .container {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        grid-template-rows: auto auto auto auto auto;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "header header header header header"
-            "main main main main main"
-            "main main main main main"
-            "main main main main main"
-            "footer footer footer footer footer";
-    }
-
-    .header {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "banner banner banner"
-            "banner banner banner"
-            "title title title";
-        grid-area: header;
-    }
-
-    .banner {
-        grid-area: banner;
-
-        .logo {
-            max-width: 99.9vw;
-            height: auto;
-        }
-    }
-
-    .title {
-        grid-area: title;
-        padding-left: 3vw;
-    }
-
-    .footer {
-        grid-area: footer;
-    }
-
-    .intro {
-        grid-area: intro;
-        padding-top: 1vh;
-        padding-left: 1vw;
-        padding-right: 1vw;
-    }
-
-
-    .main {
-        display: grid;
-        grid-template-columns: 26vw 25vw 25vw 20vw;
-        grid-template-rows: auto auto auto;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "intro intro intro menu"
-            "options options options menu"
-            ". . . menu";
-        grid-area: main;
-        margin-left: 40px;
-    }
-
-
-
-    .menu {
-        display: grid;
-        grid-area: menu;
-    }
-
-
-    .burgermenu {
+    
+    .Menu {
         display: none;
     }
 
-    .options {
-        grid-area: options;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        padding: auto;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
-    }
-
-    .option {
-        padding-left: 1vw;
-        padding-right: 1vw;
-    }
-
-    .option-image {
-        position: relative;
-        align-content: center;
-
-
-    }
-
-    .option-image img {
-        max-height: 30vh;
-        width: auto;
-    }
-
-    .option-text {
-        position: absolute;
-        top: 50%;
-        text-align: center;
-        color: white;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    .option-image:not(:hover) .option-text {
-        opacity: 1;
-    }
-
-    .option-image:hover .option-text {
-        opacity: .5;
-    }
-}
-
-@media (min-width:1400px) {
     .options {
         grid-area: options;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: auto;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
+        flex-direction: column;
         padding-left: 10px;
     }
 
-    .option {
-        padding-left: 1vw;
-        padding-right: 1vw;
+    .option img {
+        width: 80vw;
+        max-height: 50vh;
     }
 
-    .option-image {
-        position: relative;
-        align-content: center;
-
-
-    }
-
-    .option-image img {
-        max-height: 30vh;
-        width: auto;
-    }
-
-    .option-text {
-        position: absolute;
-        top: 50%;
-        text-align: center;
-        color: white;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    .option-image:not(:hover) .option-text {
-        opacity: 1;
-    }
-
-    .option-image:hover .option-text {
-        opacity: .5;
+    .topbar {
+        max-height: 10vh;
     }
 }
