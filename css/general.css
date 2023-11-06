@@ -71,6 +71,10 @@ body {
 #burgermenu{
     max-width: 10vw;
 }
+.submenu{
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
     .submenu{
         display: block;
