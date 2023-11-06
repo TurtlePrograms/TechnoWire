@@ -1,39 +1,57 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
         "topbar topbar topbar topbar topbar topbar"
-        "content content content content content Menu"
-        "content content content content content Menu"
-        "content content content content content Menu"
-        "footer footer footer footer footer footer";
+        "text text text text text Menu"
+        "options options options options options Menu"
+        "options options options options options Menu";
 }
 
 .topbar {
     grid-area: topbar;
 }
 
+.topbar img {
+    width: 100vw;
+    height: auto;
+}
+
 .Menu {
     grid-area: Menu;
-    background-color: var(--light);
 }
-.Menu button{
-    width: 100%;
-    height: calc(100%/5);
-    background-color: var(--dark)   
+
+.text {
+    grid-area: text;
+    padding-left: 20px;
 }
-.Menu button:hover{
+
+.options {
+    grid-area: options;
+    display: flex;
+    padding-left: 10px;
+}
+
+.option {
+    padding: 0px 10px 0px 10px;
+    height: 25vh;
+}
+.option:hover {
     background-color: var(--blend);
 }
 
-.footer {
-    grid-area: footer;
+.option a {
+    text-decoration: none;
+    color: var(--text);
 }
 
-.content {
-    grid-area: content;
-    padding-left: 10px;
+.option img {
+    width: 20vw;
+    max-height: 25vh;
+}
+.option:hover img{
+    filter: contrast(2);
 }
